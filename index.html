@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Avaliação web I</title>
+</head>
+<body>
+    <header>
+        
+        <!-- logo do site -->
+        <img src="" alt="">
+        <!-- Titulo do site -->
+        <h1> Chip<span style="color: gray;">com</span></h1>
+        <span class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <nav>
+
+            <ul type="none" id="navList">
+                <li>Home</li>
+                <li>Contato</li>
+                <li>Sobre Nòs</li>
+                <li>Serviços</li>
+                <li>Produtos</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introdução">
+            <h2>Sejá Bem vindo a  Chip<span style="color: gray;">com</span>!</h2>
+            <p>
+                Na nossa loja, você encontra uma ampla variedade de componentes e acessórios, oferecemos produtos de alta qualidade das melhores marcas do mercado.
+            </p>   
+            <h2>Serviços</h2>
+        </section>
+        <section id="serviços">
+
+            <div class="servico">
+                <img src="image/manutenção.jpg" alt="Homem concertando um computador!">
+            </div>
+            <div class="servico">
+                <img src="image/montagem.jpg" alt="uma pessoa montando um computador!">
+            </div>
+            <div class="servico">
+                <img src="image/consultoria_tecnica.jpg" alt="Consultoria Tecnica!">
+            </div>
+          
+        </section>
+        <section id="produtos">
+            <h2>Produtos</h2>
+                <div class="produto">
+                    <img src="image/AMD_Ryzen9.jpg" alt="imagem processador ryzen 9">
+                    <h3>Ryzen 9 </h3>
+                    <h4>R$ 600,00</h4>
+                    <button>COMPAR</button>
+                </div>
+                <div class="produto">
+                    <img src="image/cadeira_gamer.jpg" alt="Imagem cadeira gamer">
+                    <h3>Cadeira Gamer</h3>
+                    <h4>R$ 500,00</h4>
+                    <button>COMPAR</button>
+                </div>
+                <div class="produto">
+                    <img src="image/fonte_alimentação_MSI.jpg" alt="Fonte de alimentação">
+                    <h3>Fonte 650w MSI</h3>
+                    <h4>R$ 299,00</h4>
+                    <button>COMPAR</button>
+                </div>
+                <div class="produto">
+                    <img src="image/gpu.jpg" alt="Imagem Placa de video">
+                    <h3>GPU RTX 4060</h3>
+                    <h4>R$ 2.150,00</h4>
+                    <button>COMPAR</button>
+                </div>
+                <div class="produto">
+                    <img src="image/mother_board_AORUS.jpg" alt="Imagem placa de video AORUS">
+                    <h3>Placa Mãe B550</h3>
+                    <h4>R$ 740,00</h4>
+                    <button>COMPAR</button>
+                </div>
+                <div class="produto">
+                    <img src="image/notebook.jpg" alt="Imagem notebook acer nitro 5">
+                    <h3>Acer Nitro V</h3>
+                    <h4>R$ 4.450,00</h4>
+                    <button>COMPAR</button>
+                </div>
+                <div class="produto">
+                    <img src="image/SSD_Kingston.jpg" alt="Imagem SSD kingston 240 gb">
+                    <h3>SSD Kingston 240 GB</h3>
+                    <h4>R$ 190,00</h4>
+                    <button>COMPAR</button>
+                </div>
+                <div class="produto">
+                    <img src="image/SSD_kingston960.jpg" alt="Imagem SSD kingston 960 gb">
+                    <h3>Processador Ryzen 9 </h3>
+                    <h4>R$ 960,00</h4>
+                    <button>COMPAR</button>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>Criado por <a href="https://www.github.com/spinolajunior">Roberto Junior</a> ,Todos os direitos reservados. </p>
+    </footer>
+    <script>
+        function clickMenu(){
+            if(navList.style.display=='none'){
+            navList.style.display='flex'}else{
+                navList.style.display='none'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+   --azul:#2B4E63;
+   --azulClaro:#C5D8E3;
+   --branco:#FFFF;
+   --preto:#000000;
+   --fonteTitulo:"Roboto", sans-serif;
+   --fonteTexto:"Open Sans",sans-serif:
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: var(--azulClaro);
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100vw;
+   
+    
+}
+footer{
+    background-color: var(--azul);
+}
+footer>p{
+    font-family: var(--fonteTitulo);
+    color: white;
+}
+footer>p>a{
+    text-decoration: none;
+    font-family: var(--fonteTitulo);
+    color: gold;
+}
+footer>p>a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B4E63;
+    color: white;
+}
+header>h1{
+    font-family: var(--fonteTitulo);
+    font-weight: bold;
+    font-size: 2.5em;
+}
+header>h1>span{
+    font-size: 1.3em;
+}
+.material-symbols-outlined{
+    cursor: pointer;
+}
+#navList{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header>span{
+    display: none;
+}
+nav>ul>li{
+ 
+    align-items: center;
+    font-size: 1em;
+    color: var(--azul);
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.185);
+    background-color:lightgray;
+    width: 96vw;
+    padding: 4px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+nav>ul>li:hover{
+    color: red;
+    width: 90vw;
+}
+
+#introdução{
+    padding: 5px 10px 0px 10px;
+}
+
+#introdução>h2{
+    font-family: var(--fonteTitulo);
+    text-align: center;
+    color:var(--azul);
+    margin-bottom:15px ;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
+    
+}
+#introdução>p{
+    font-family: var(--fonteTexto);
+    text-align: justify;
+    color: #000;
+    font-size: 1.2em;
+    text-indent: 40px;
+  
+}
+#serviços{
+    margin-top: 20px;
+    margin-bottom: 20px ;
+    color: #000;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+
+    
+}
+#serviços>h2{
+    font-family: var(--fonteTitulo);
+    color: var(--azul);
+    font-size: 2em;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
+    
+}
+
+.servico>img{
+    width:95%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.507);
+}
+#produtos{
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow:row wrap ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+#produtos>h2{
+    width: 100%;
+    color: var(--azul);
+    font-size: 2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
+}
+.produto{
+    padding: 10px;
+display: flex;
+flex-flow: column;
+align-items: center;
+ border:2px solid #2b4d6377;
+ border-radius: 5px;
+ width: 45%; 
+ height:50%;  
+}
+
+
+.produto>img{
+    width: 60%;
+}
+.produto>button{
+    color: green;
+    font-family: var(--fonteTexto);
+    font-weight: bold;
+    width: 60%;
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    border-radius: 8px;
+}
+.produto>button:hover{
+    color: var(--azul);
+    width: 50%;
+}
+@media screen and (min-width: 768px) and (max-width:992px)  {  
+    
+span.material-symbols-outlined{
+display: none;}
+
+#navList{
+    flex-direction: row;
+    width: 100vw;
+    margin-right: 10px;
+    justify-content: end;
+}
+nav>ul>li{
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color:rgb(211, 211, 211);
+    width: 110px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    height: 26px;
+
+}
+nav>ul>li:hover{
+    color: red;
+    background-color: white;
+    width: 110px;
+}
+header>h1{
+    font-weight: bold;
+    font-size: 3.5em;
+}
+header>h1>span{
+    font-size: 1.3em;
+}
+#introdução>h2{
+    font-size: 2.5em;
+}
+#serviços{
+    margin-top: 20px;
+    margin-bottom: 20px ;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 16px;
+    width: 100vw;
+
+    
+}
+    
+
+.servico{
+    width: 30%;
+}
+
+.servico>img{
+    width:100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.507);
+}
+
+#produtos>h2{
+    font-size: 3em;
+}
+.produto{
+
+ width: 30%; 
+ height:50%;  
+}
+
+
+.produto>img{
+    width: 70%;
+}
+.produto>button{
+    width: 40%;
+   
+}
+
+}
+@media screen and (min-width:992px) {
+    
+    span.material-symbols-outlined{
+        display: none;}
+        
+        #navList{
+            flex-direction: row;
+            width: 100vw;
+            margin-right: 35px;
+            justify-content: end;
+        }
+        nav>ul>li{
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color:rgb(211, 211, 211);
+            width: 110px;
+            margin-bottom: 4px;
+            margin-right: 4px;
+            height: 26px;
+        }
+        nav>ul>li:hover{
+            color: red;
+            background-color: lightyellow;
+            width: 110px
+        }
+        header{
+            padding-bottom: 1px ;
+        }
+        header>h1{
+            font-weight: bold;
+            font-size: 4em;
+        }
+        header>h1>span{
+            font-size: 1.4em;
+        }
+        #introdução>h2{
+            font-size: 3em;
+        }
+        #introdução>p{
+            text-indent: 0;
+            text-align: center;
+            font-size: 1.5em;
+
+        }
+        #serviços{
+            margin-top: 20px;
+            margin-bottom: 20px ;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+            gap: 16px;
+            width: 100vw;
+        
+            
+        }
+            
+        
+        .servico{
+            width: 30%;
+        }
+        
+        .servico>img{
+            width:100%;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.507);
+        }
+        
+        #produtos>h2{
+            font-size: 3em;
+        }
+        .produto{
+        
+         width: 30%; 
+         height:50%;  
+        }
+        
+        
+        .produto>img{
+            width: 70%;
+        }
+        .produto>button{
+            width: 40%;
+           
+        }    
+
+}
