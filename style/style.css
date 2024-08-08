@@ -9,7 +9,7 @@
    --branco:#FFFF;
    --preto:#000000;
    --fonteTitulo:"Roboto", sans-serif;
-   --fonteTexto:"Open Sans",sans-serif:
+   --fonteTexto:"Open Sans", sans-serif;
 }
 *{
     padding: 0;
@@ -17,9 +17,13 @@
     box-sizing:border-box ;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+html{
     width: 100vw;
     height: 100vh;
+}
+body{
+    width: 100%;
+    height: 100%;
     color: white;
     background-color: var(--azulClaro);
     text-align: center;
@@ -28,9 +32,7 @@ main{
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 100vw;
-   
-    
+    width: 100vw; 
 }
 footer{
     background-color: var(--azul);
@@ -59,23 +61,38 @@ header{
     background-color: #2B4E63;
     color: white;
 }
-header>h1{
+#logo{
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#logo>h1{
     font-family: var(--fonteTitulo);
     font-weight: bold;
     font-size: 2.5em;
 }
-header>h1>span{
+#logo>img{
+    width: 20%;
+}
+#logo>h1>span{
     font-size: 1.3em;
 }
 .material-symbols-outlined{
     cursor: pointer;
 }
 #navList{
+    width: 100%;
     cursor: pointer;
     display: none;
     flex-direction: column;
     align-items: center;
+    margin: 0px 0px 0px 0px;
 }
+
 header>span{
     display: none;
 }
@@ -112,10 +129,10 @@ nav>ul>li:hover{
     
 }
 #introdução>p{
-    font-family: var(--fonteTexto);
+    font-family:var(--fonteTexto);
     text-align: justify;
     color: #000;
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-indent: 40px;
   
 }
@@ -169,7 +186,8 @@ align-items: center;
  border:2px solid #2b4d6377;
  border-radius: 5px;
  width: 45%; 
- height:50%;  
+ height:50%;
+ box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.226);  
 }
 
 
@@ -188,7 +206,7 @@ align-items: center;
     color: var(--azul);
     width: 50%;
 }
-@media screen and (min-width: 768px) and (max-width:992px)  {  
+@media screen and (min-width: 600px) and (max-width:992px)  {  
     
 span.material-symbols-outlined{
 display: none;}
@@ -197,7 +215,6 @@ display: none;}
     display: flex;
     flex-direction: row;
     width: 100vw;
-    margin-right: 10px;
     justify-content: end;
 }
 nav>ul>li{
@@ -215,12 +232,12 @@ nav>ul>li:hover{
     background-color: white;
     width: 110px;
 }
-header>h1{
+#logo>h1{
     font-weight: bold;
     font-size: 3.5em;
 }
-header>h1>span{
-    font-size: 1.3em;
+#logo>h1>span{
+    font-size: 1.4em;
 }
 #introdução>h2{
     font-size: 2.5em;
@@ -277,8 +294,8 @@ header>h1>span{
             display:flex ;
             flex-direction: row;
             width: 100vw;
-            margin-right: 35px;
             justify-content: end;
+            
         }
         nav>ul>li{
             font-size: 1.2em;
@@ -297,11 +314,11 @@ header>h1>span{
         header{
             padding-bottom: 1px ;
         }
-        header>h1{
+        #logo>h1{
             font-weight: bold;
             font-size: 4em;
         }
-        header>h1>span{
+        #logo>h1>span{
             font-size: 1.4em;
         }
         #introdução>h2{
